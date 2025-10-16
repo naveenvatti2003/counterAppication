@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .counter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f5f8;
+    }
+    
+    .counter-heading{
+        font-family: "Roboto";
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .counter-Value{
+        font-size: 75px;
+        font-weight: 900;
+    }
+    .button{
+        background-color: #f1f5f8;
+        border-width: 15px;
+        border-color: black;
+        border-radius: 10px;
+        margin: 8px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="counter">
+        <h1 class="counter-heading">Counter</h1>
+        <p class="counter-Value" id ="counterValue">0</p>
+        <div>
+            <button onclick="onDecrese()">Decrese</button>
+            <button onclick="Reset()">Reset</button>
+            <button onclick="onIncrese()">Increse</button>
+        </div>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
